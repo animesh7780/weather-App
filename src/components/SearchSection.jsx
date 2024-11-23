@@ -5,7 +5,6 @@ const SearchSection = ({ getWeatherDetails, searchInputRef }) => {
         const searchInput = e.target.querySelector('.search-input');
         const API_URL = `http://api.weatherapi.com/v1/forecast.json?key=${API_KEY}&q=${searchInput.value}&days=2`;
         getWeatherDetails(API_URL)
-
     }
 
     // Get Current Location
@@ -29,7 +28,7 @@ const SearchSection = ({ getWeatherDetails, searchInputRef }) => {
                 <input type="text" placeholder="Enter a city" ref={searchInputRef} className="search-input" required />
             </form>
             <button className="location-button" onClick={handleLocationSearch}>
-                <span className="material-symbols-rounded">TAP</span>
+                <span className="material-symbols-rounded">Y</span>
             </button>
         </div>
     )

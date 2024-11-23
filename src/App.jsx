@@ -31,6 +31,8 @@ const App = () => {
       const response = await fetch(API_URL);
       if (!response.ok) throw new Error('Something went wrong');
       const data = await response.json();
+      console.log(data);
+
 
       //current weather data
       const temperature = data.current.temp_c;
@@ -50,7 +52,7 @@ const App = () => {
   }
 
   useEffect(() => {
-    const API_URL = `http://api.weatherapi.com/v1/forecast.json?key=${API_KEY}&q=delhi&days=2`;
+    const API_URL = `http://api.weatherapi.com/v1/forecast.json?key=${API_KEY}&q=Mumbai&days=2`;
     getWeatherDetails(API_URL)
   }, [])
 
