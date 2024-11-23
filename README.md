@@ -16,3 +16,6 @@ The app has the following features:
 - Search for a city and get the weather for that city
 - Get the current location and get the weather for that location
 - Display the weather for the next 24 hours
+
+# ScreenShots
+![Weather App](./public/Untitled.png)
